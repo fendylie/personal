@@ -1,0 +1,40 @@
+$primaryColor : #5605E8;
+$primaryBgColor : #131211;
+$colorWhite : #fff;
+$robotoMono : 'Roboto Mono', monospace;
+$robotoCon : 'Roboto Condensed', sans-serif;
+$robotoSlab : 'Roboto Slab', serif;
+$roboto : 'Roboto', sans-serif;
+// extend
+
+// navbar
+%navLink{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    color: $colorWhite;
+    text-decoration: none;
+    filter: grayscale(0%) opacity(1);
+    transition: 600ms;
+}
+
+%tooltip{
+    position: relative;
+    img{
+        width: 50px;
+        position: absolute;
+        left: 45%;
+        top: -70%;
+        transform: translateX(-50%) translateY(-80%);
+        transition: 250ms ease;
+        z-index: 999999;
+        opacity: 0;
+    }
+    &:hover{
+        img{
+            opacity: 1;
+            transform: translateX(-50%) translateY(-100%);
+        }
+    }
+}
+

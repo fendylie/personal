@@ -1,0 +1,84 @@
+// Modal Contact
+#modal-contact {
+    background-color: $primaryBgColor;
+    padding: 0 !important;
+    .modal-header{
+        margin : 0 130px 40px;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 5px;
+    }
+
+    .modal-footer{
+        border: none;
+    }
+
+    .main-form{
+        span{
+            display: inline-block;
+            font-size: 28px;
+        }
+        input{
+            font-size: 28px;
+        }
+    }
+
+    .form-control {
+        border-radius: 0 !important;
+        height: 40px;
+        border: none;
+        border-bottom: 2px solid #fff;
+        background-color: transparent;
+        padding: 0;
+        color: $colorWhite;
+        &:focus{
+            outline: none;
+            box-shadow: none;
+            background-color: transparent !important;
+        }
+    }
+
+    .modal-dialog-centered{
+        margin: 0;
+        min-width: 100%;
+    }
+    
+    .modal-contact{
+        input{
+            display: inline-block;
+        }
+        .form-group{
+            display: inline-block;
+        }
+    }
+    
+    .fa-times{
+        position: absolute;
+        right: 60px;
+        top: 50px;
+        font-size: 28px;
+    }
+    
+    .modal-content{
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@media (max-width: 500px){
+    #modal-contact{
+        .modal-header{
+            margin: 0 0 50px;
+        }
+
+        .fa-times{
+            right: 40px;
+            top: 30px;
+        }
+
+        .main-form{
+            span, input{
+                font-size: 24px;
+            }
+        }
+    }
+}
