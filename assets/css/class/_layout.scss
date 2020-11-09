@@ -1,8 +1,8 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: $robotoCon;
@@ -11,34 +11,34 @@ body{
 }
 
 /* Random Style */
-.top-20{
+.top-20 {
     top: 20px;
 }
 
-.shake{
+.shake {
     border-bottom: 2px solid red !important;
 }
 
-.title-section{
+.title-section {
     font-size: 18px;
     color: #78707e;
     letter-spacing: 1px;
     font-family: $robotoMono;
 }
 
-.timeline.alt{
+.timeline.alt {
     top: 0 !important;
     height: 5000% !important;
 }
 
-@media (max-width: 400px){
-    .row{
+@media (max-width: 400px) {
+    .row {
         margin-right: -5px;
         margin-left: -5px;
     }
 }
 
-.preloader{
+.preloader {
     position: absolute;
     z-index: 999999;
     top: 0;
@@ -53,17 +53,17 @@ body{
     height: 100vh;
     background-color: $primaryBgColor;
     transition: all 0.5s ease-out;
-    .preloader-text{
+    .preloader-text {
         color: $colorWhite;
         font-size: 24px;
         font-weight: 300;
     }
-    .blocks{
+    .blocks {
         position: relative;
         width: 70px;
         height: 70px;
         animation: rotate 5s ease-in-out infinite;
-        .block{
+        .block {
             position: absolute;
             width: 30px;
             height: 30px;
@@ -71,43 +71,43 @@ body{
             background-color: $primaryColor;
             transition: all 0.25s linear;
         }
-        .block::nth-child(1){
+        .block::nth-child(1) {
             top: 0;
             left: 40px;
         }
-        .block::nth-child(2){
+        .block::nth-child(2) {
             top: 0;
             left: 0;
         }
-        .block::nth-child(3){
+        .block::nth-child(3) {
             top: 40px;
             left: 0;
         }
     }
 }
 
-.title-section.reveal-block::after{
+.title-section.reveal-block::after {
     animation-delay: 3.5s;
 }
 
-.title-section .reveal-block-text{
+.title-section .reveal-block-text {
     animation-delay: 4s;
 }
 
-.text-typed.reveal-block{
-    &::after{
+.text-typed.reveal-block {
+    &::after {
         animation-delay: 3s;
     }
-    .reveal-block-text{
+    .reveal-block-text {
         animation-delay: 3.5s;
     }
 }
 
-.reveal-block{
+.reveal-block {
     position: relative;
     display: inline-block;
-    &::after{
-        content: '';
+    &::after {
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -119,63 +119,63 @@ body{
     }
 }
 
-.reveal-block-text{
+.reveal-block-text {
     opacity: 0;
     animation: appear-text 0.0001s linear forwards;
     animation-delay: 4.5s;
 }
 
 /* Animation */
-@keyframes moving-gradient{
-    0%{
+@keyframes moving-gradient {
+    0% {
         background-position: 0 0;
         opacity: 0.5;
     }
-    50%{
+    50% {
         background-position: 400% 0;
         opacity: 1;
     }
-    100%{
+    100% {
         background-position: 0 0;
         opacity: 0.5;
     }
 }
 
-@keyframes rotate{
-    0%{
+@keyframes rotate {
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
 
-@keyframes rev-block{
-    0%{
+@keyframes rev-block {
+    0% {
         left: 0;
         width: 0%;
     }
-    50%{
+    50% {
         left: 0;
         width: 100%;
     }
-    100%{
+    100% {
         left: 100%;
         width: 0%;
     }
 }
 
-@keyframes appear-text{
-    0%{
+@keyframes appear-text {
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
 
 /* Button Styles */
-.btn-send{
+.btn-send {
     background-color: $primaryColor;
     color: $colorWhite;
     letter-spacing: 1px;
@@ -183,38 +183,38 @@ body{
     outline: none;
     border: none;
     padding: 8px 24px;
-    &:hover{
+    &:hover {
         box-shadow: 0 0 10px $primaryColor;
     }
 }
 
-button{
-    &:focus{
+button {
+    &:focus {
         outline: none;
     }
 }
 
 /* Navbar */
-.navbar{
+.navbar {
     width: 80px;
     position: fixed;
     background: transparent;
     transition: width 600ms ease;
     height: 100vh;
     z-index: 1020;
-    &:hover{
+    &:hover {
         width: 256px;
     }
     &:hover .nav-text,
-    &:hover .logo-text{
+    &:hover .logo-text {
         display: inline;
     }
-    &:hover .logo i{
+    &:hover .logo i {
         transform: rotate(-180deg);
     }
 }
 
-.navbar-nav{
+.navbar-nav {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -224,23 +224,23 @@ button{
     height: 100%;
 }
 
-.nav-item{
+.nav-item {
     width: 100%;
-    &:last-child{
+    &:last-child {
         margin-top: auto;
     }
 }
 
-.nav-link{
+.nav-link {
     @extend %navLink;
-    i{
+    i {
         width: 32px;
         min-width: 32px;
         margin: 0 16px;
         font-size: 20px;
         color: $colorWhite;
     }
-    .nav-text{
+    .nav-text {
         display: none;
         margin-left: 16px;
         color: $colorWhite;
@@ -248,88 +248,88 @@ button{
     &:hover i,
     &:hover .nav-text,
     &.active i,
-    &.active .nav-text{
+    &.active .nav-text {
         color: $primaryColor;
         font-weight: bold;
-        transition: 0.3s cubic-bezier(.165,.84,.44,1);
+        transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
         transform: scale(1.2);
     }
 }
 
-.navbar-brand{
+.navbar-brand {
     @extend %navLink;
     cursor: default;
     font-size: 32px;
-    i{
+    i {
         width: 32px;
         min-width: 32px;
         margin: 0 16px;
         transform: rotate(0deg);
         transition: 600ms;
     }
-    .logo-text{
+    .logo-text {
         display: none;
         margin-left: 16px;
         letter-spacing: 1px;
     }
 }
 
-@media (max-width: 768px){
-    .navbar{
+@media (max-width: 768px) {
+    .navbar {
         width: 100%;
         height: 64px;
         bottom: 0;
         background-color: #23232e;
-        &:hover .logo-text{
+        &:hover .logo-text {
             display: none;
         }
-        &:hover .nav-link .nav-text{
+        &:hover .nav-link .nav-text {
             display: block;
             transform: scale(1.1);
         }
-        .nav-text{
+        .nav-text {
             display: block;
             font-size: 12px;
             margin-left: 0;
             letter-spacing: 1px;
         }
-        &:hover{
+        &:hover {
             width: 100%;
         }
     }
 
-    .nav-item:last-child{
+    .nav-item:last-child {
         margin-top: 0;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         flex-direction: row;
     }
 
-    .nav-link{
+    .nav-link {
         display: block;
         justify-content: center;
         text-align: center;
         height: 50px;
     }
 
-    .logo{
+    .logo {
         display: none;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         width: 100%;
     }
 }
 
-@media (max-width : 400px){
-    .navbar{
+@media (max-width: 400px) {
+    .navbar {
         height: 56px;
-        .nav-link{
-            i{
+        .nav-link {
+            i {
                 font-size: 16px !important;
             }
-            .nav-text{
+            .nav-text {
                 font-size: 10px !important;
             }
         }
@@ -338,7 +338,7 @@ button{
 /* End of Navbar */
 
 /* Home */
-.home{
+.home {
     position: relative;
     overflow: hidden;
     background-color: #100e17;
@@ -347,7 +347,7 @@ button{
     background-position: center;
 }
 
-.text-typed{
+.text-typed {
     letter-spacing: 4px;
     font-weight: bold;
     font-size: 42px;
@@ -363,7 +363,8 @@ button{
     background-color: $primaryColor;
 }
 
-.bullet:before, .bullet{
+.bullet:before,
+.bullet {
     position: absolute;
 }
 
@@ -379,11 +380,11 @@ button{
     background-color: #131211;
 }
 
-@media (max-width: 768px) { 
-    .text-typed{
+@media (max-width: 768px) {
+    .text-typed {
         font-size: 28px;
-        .reveal-block-text{
-            span:nth-child(1){
+        .reveal-block-text {
+            span:nth-child(1) {
                 display: block;
             }
         }
@@ -398,15 +399,15 @@ button{
     overflow: hidden;
     cursor: default;
     background-color: #14121c;
-    .dot{
+    .dot {
         color: #3b3553;
         display: inline;
     }
 }
 
-.bullet-title{
+.bullet-title {
     position: relative;
-    &::before{
+    &::before {
         position: absolute;
         content: "";
         left: -25px;
@@ -420,56 +421,52 @@ button{
     }
 }
 
-.tooltip-logo{
-    @extend %tooltip;
-}
-
-.comment{
+.comment {
     color: #78707e;
 }
 
-.bracket{
+.bracket {
     color: #ffff00;
 }
 
-.className{
+.className {
     color: #fff86e;
 }
 
-.function{
+.function {
     color: #33beff;
 }
 
-.method{
+.method {
     color: #c163ff;
 }
 
-.prop{
+.prop {
     color: #e3244c;
 }
 
-.string{
+.string {
     color: #62fc7f;
 }
 
-@keyframes blink{
-    0%{
+@keyframes blink {
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
 
-.cursor::before{
+.cursor::before {
     opacity: 0;
     content: "|";
     animation: blink 1s infinite;
 }
 
-.code{
+.code {
     font-size: 16px;
-    &::before{
+    &::before {
         content: attr(data-line-num);
         left: -35px;
         position: absolute;
@@ -478,8 +475,8 @@ button{
     }
 }
 
-@media (max-width: 768px) { 
-    .dot{
+@media (max-width: 768px) {
+    .dot {
         display: none !important;
     }
 }
@@ -489,20 +486,25 @@ button{
 /* Projects */
 .projects {
     position: relative;
-    background-image: linear-gradient(-180deg,#1a1527,#0e0c16 88%,#0e0c16 99%);
+    background-image: linear-gradient(
+        -180deg,
+        #1a1527,
+        #0e0c16 88%,
+        #0e0c16 99%
+    );
     background-color: #0f0d15;
     background-repeat: repeat-x;
     font-weight: bold;
     font-size: 24px;
     letter-spacing: 1px;
     overflow: hidden;
-    .row:nth-child(2){
+    .row:nth-child(2) {
         padding-left: 10%;
         padding-right: 8%;
     }
 }
 
-.project-text{
+.project-text {
     font-family: $robotoCon;
     position: absolute;
     font-weight: 700;
@@ -518,90 +520,94 @@ button{
     cursor: default;
 }
 
-.box-img{
+.box-img {
     width: 410px;
     height: 230px;
     position: relative;
-    &:hover{
-        .num-project{
-            .fa-arrow-right{
+    &:hover {
+        .num-project {
+            .fa-arrow-right {
                 margin-left: 10px;
             }
         }
     }
 }
 
-.box-img.h{
+.box-img.h {
     width: 230px;
     height: 410px;
-    .project-img{
+    .project-img {
         width: 230px;
         height: 410px;
     }
 }
 
-.project-img{
+.project-img {
     width: 410px;
     height: 230px;
     position: relative;
-    &::before{
+    &::before {
         content: "";
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(65deg,rgba(16,9,27,.8),transparent 50%);
+        background-image: linear-gradient(
+            65deg,
+            rgba(16, 9, 27, 0.8),
+            transparent 50%
+        );
         position: absolute;
     }
 }
 
-#project-0{
+#project-1 {
     background-image: url(../../../assets/img/home.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-#project-1{
+#project-2 {
     background-image: url(../../../assets/img/captrue.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-#project-2{
-    background-image: url(../../../assets/img/smyth1.png);
+#project-3 {
+    background-image: url(../../../assets/img/recipe-app.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.num-project{
+.num-project {
     color: #988e9f;
     font-size: 14px;
     font-weight: 400;
     font-family: $robotoMono;
     margin-bottom: 0;
-    .fa-arrow-right{
+    .fa-arrow-right {
         color: #988e9f;
         font-size: 10px;
         margin-top: -5px;
         margin-left: 0;
-        transition: .5s;
+        transition: 0.5s;
     }
 }
 
-.line{
+.line {
     height: 3px;
     width: 100%;
     background-color: $colorWhite;
 }
 
-.icon{
+.icon {
     position: absolute;
     bottom: -35px;
     right: 30px;
-    i{
+    i {
         background: aqua;
         padding: 8px;
         border-radius: 50%;
@@ -609,27 +615,27 @@ button{
     }
 }
 
-@media(max-width: 768px){
-    .project-img{
+@media (max-width: 768px) {
+    .project-img {
         width: 210px;
         height: 117px;
     }
-    .box-img{
+    .box-img {
         width: 210px;
         height: 117px;
         margin-left: 100px !important;
         margin-top: 70px !important;
         margin-bottom: 40px;
     }
-    .box-img.h{
+    .box-img.h {
         width: 210px;
         height: 350px;
-        .project-img{
+        .project-img {
             width: 210px;
             height: 350px;
         }
     }
-    .project-text{
+    .project-text {
         font-size: 20px;
         left: -50px;
         bottom: -10px;
@@ -638,29 +644,29 @@ button{
 /* End of Projects */
 
 /* Contact */
-.contact{
+.contact {
     position: relative;
     font-family: $robotoCon;
     overflow: hidden;
     background-color: #0e0d10;
 }
 
-.social-media{
+.social-media {
     display: grid;
     grid-template-columns: 50% 50%;
-    a{
+    a {
         text-decoration: none;
         color: $primaryColor;
         font-size: 20px;
         margin: 2px 0;
         letter-spacing: 1px;
-        i{
+        i {
             margin-right: 12px;
         }
     }
 }
 
-.made{
+.made {
     position: absolute;
     bottom: 0;
     color: #78707e;
@@ -668,38 +674,37 @@ button{
     letter-spacing: 1px;
 }
 
-.bodyContact{
+.bodyContact {
     position: relative;
     top: 60%;
 }
 
-@media (max-width: 768px) { 
-    .social-media{
+@media (max-width: 768px) {
+    .social-media {
         grid-template-columns: none;
     }
-    .made{
+    .made {
         bottom: 67px;
     }
-    .contact{
+    .contact {
         padding-bottom: 64px;
-        .min-vh-100{
+        .min-vh-100 {
             min-height: 600px !important;
         }
     }
-    .bodyContact{
+    .bodyContact {
         top: 50%;
     }
 }
 
-@media (max-width: 500px){
-    .social-media{
-        a{
+@media (max-width: 500px) {
+    .social-media {
+        a {
             font-size: 14px;
         }
     }
-    .contact{
+    .contact {
         padding-bottom: 60px;
     }
 }
 /* End of Contact */
-

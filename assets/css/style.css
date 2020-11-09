@@ -8,24 +8,6 @@
   transition: 600ms;
 }
 
-.tooltip-logo {
-  position: relative;
-}
-.tooltip-logo img {
-  width: 50px;
-  position: absolute;
-  left: 45%;
-  top: -70%;
-  transform: translateX(-50%) translateY(-80%);
-  transition: 250ms ease;
-  z-index: 999999;
-  opacity: 0;
-}
-.tooltip-logo:hover img {
-  opacity: 1;
-  transform: translateX(-50%) translateY(-100%);
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -97,7 +79,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 5px;
-  background-color: #5605E8;
+  background-color: #5605e8;
   transition: all 0.25s linear;
 }
 .preloader .blocks .block::nth-child(1) {
@@ -139,7 +121,7 @@ body {
   left: 0;
   width: 0%;
   height: 100%;
-  background: #5605E8;
+  background: #5605e8;
   animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   animation-delay: 4s;
 }
@@ -197,7 +179,7 @@ body {
 }
 /* Button Styles */
 .btn-send {
-  background-color: #5605E8;
+  background-color: #5605e8;
   color: #fff;
   letter-spacing: 1px;
   border-radius: 20px;
@@ -206,7 +188,7 @@ body {
   padding: 8px 24px;
 }
 .btn-send:hover {
-  box-shadow: 0 0 10px #5605E8;
+  box-shadow: 0 0 10px #5605e8;
 }
 
 button:focus {
@@ -262,7 +244,7 @@ button:focus {
   color: #fff;
 }
 .nav-link:hover i, .nav-link:hover .nav-text, .nav-link.active i, .nav-link.active .nav-text {
-  color: #5605E8;
+  color: #5605e8;
   font-weight: bold;
   transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transform: scale(1.2);
@@ -367,10 +349,11 @@ button:focus {
   top: 7px;
   z-index: 9;
   position: absolute;
-  background-color: #5605E8;
+  background-color: #5605e8;
 }
 
-.bullet:before, .bullet {
+.bullet:before,
+.bullet {
   position: absolute;
 }
 
@@ -382,7 +365,7 @@ button:focus {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 2px solid #5605E8;
+  border: 2px solid #5605e8;
   background-color: #131211;
 }
 
@@ -420,7 +403,7 @@ button:focus {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 2px solid #5605E8;
+  border: 2px solid #5605e8;
   background-color: #131211;
 }
 
@@ -548,22 +531,22 @@ button:focus {
   position: absolute;
 }
 
-#project-0 {
+#project-1 {
   background-image: url(../../../assets/img/home.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-#project-1 {
+#project-2 {
   background-image: url(../../../assets/img/captrue.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-#project-2 {
-  background-image: url(../../../assets/img/smyth1.png);
+#project-3 {
+  background-image: url(../../../assets/img/recipe-app.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -646,7 +629,7 @@ button:focus {
 }
 .social-media a {
   text-decoration: none;
-  color: #5605E8;
+  color: #5605e8;
   font-size: 20px;
   margin: 2px 0;
   letter-spacing: 1px;
