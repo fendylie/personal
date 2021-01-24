@@ -20,14 +20,14 @@
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
 
     <!-- Preloader -->
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="blocks">
             <div class="block"></div>
             <div class="block"></div>
             <div class="block"></div>
         </div>
         <p class="preloader-text mt-4">Loading...</p>
-    </div>
+    </div> -->
     <!-- End of Preloader -->
 
     <!-- Navbar -->
@@ -212,31 +212,13 @@
                     <span class="code" data-line-num="23">
                         <div class="dot">&#xb7;&#xb7;&#xb7;&#xb7;</div><span class="method">return</span>
                         <span class="function">[</span>
-<<<<<<< HEAD
-                        <span class="string">'HTML'</span>
-                        , <span class="string">'CSS'</span>, <span class="string">'SASS'
-                        </span>, <span class="string">'Bootstrap'</span>, <span class="string">'JavaScript'
-                        </span>, <span class="string">'React Js'
-                            , <span class="string">'PHP'
-                                , <span class="string">'Adobe Premiere'
-                            </span>, <span class="string">'Adobe Photoshop'
-                            </span>, <span class="string">'Microsoft Office'
-                            </span>, <span class="cursor"></span><span class="function">
-                                ]</span>
-                        </span>
-                        <div class="code" data-line-num="24">
-                            <div class="dot">&#xb7;&#xb7;</div><span class="method">}</span>
-                        </div>
-                        <div class="code" data-line-num="25"><span class="bracket">}</span>
-                        </div>
-=======
                         <span class="string">'HTML'
                         </span>
                         , <span class="string">'CSS'
                         </span>, <span class="string">'SASS'
                         </span>, <span class="string">'Bootstrap'</span>, <span class="string">'JavaScript'
                         </span>
-                        , <span class="string">'Premiere'
+                        , <span class="string">'React JS/Native'
                         </span>, <span class="cursor"></span><span class="function">
                             ]</span>
                     </span>
@@ -245,7 +227,6 @@
                     </div>
                     <div class="code" data-line-num="25"><span class="bracket">}</span>
                     </div>
->>>>>>> 5793926846088fbe8c8126a53ced97058f647ee4
                 </div>
             </div>
         </div>
@@ -273,11 +254,13 @@
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
-                    <div class="project-img" id="project-1"></div>
+                    <a href="project-details-1.html" target="_blank">
+                        <div class="project-img" id="project-1"></div>
+                    </a>
                 </div>
             </div>
 
-            <div class="mx-auto pt-0 offseted justify-content-center d-flex col-sm-10 col-md-4">
+            <!-- <div class="mx-auto pt-0 offseted justify-content-center d-flex col-sm-10 col-md-4">
                 <div class="box-img" data-tilt data-tilt-scale="1.1" id="web-captrue"
                     style="margin-left: -280px;margin-top: 300px;">
                     <div class="project-text">
@@ -287,21 +270,41 @@
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
-                    <div class="project-img" id="project-2"></div>
+                    <a href="project-details-2.html" target="_blank">
+                        <div class="project-img" id="project-2"></div>
+                    </a>
                 </div>
-            </div>
+            </div> -->
 
             <div class="mx-auto pt-0 offseted justify-content-center d-flex col-sm-10 col-md-4">
                 <div class="box-img" data-tilt data-tilt-scale="1.1" id="web-recipe"
-                    style="margin-left: -480px;margin-top: 80px;">
+                    style="margin-left: -20px;margin-top: 300px;">
                     <div class="project-text">
-                        <span>Recipe<br>App Website</span>
+                        <span>Todo<br>List Website</span>
                         <div class="line mt-2 mb-2"></div>
                         <div class="num-project">03<br />
                             <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
-                    <div class="project-img" id="project-3"></div>
+                    <a href="project-details-2.html" target="_blank">
+                        <div class="project-img" id="project-2"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mx-auto pt-0 offseted justify-content-center d-flex col-sm-10 col-md-4">
+                <div class="box-img h" data-tilt data-tilt-scale="1.1" id="fm-app"
+                    style="margin-left: -500px;margin-top: -50px;">
+                    <div class="project-text">
+                        <span>FoodMarket<br>Mobile App</span>
+                        <div class="line mt-2 mb-2"></div>
+                        <div class="num-project">04<br />
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <a href="project-details-3.html" target="_blank">
+                        <div class="project-img" id="project-3"></div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -412,6 +415,16 @@
             loopCount: Infinity,
             showCursor: true,
         });
+
+        const imgs = document.querySelectorAll(".project-img");
+        imgs.forEach(img => {
+            img.addEventListener("click" , (e) => {
+                const imgId = e.target.id;
+                if(imgId === "project-1"){
+
+                }
+            });
+        })
     </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
