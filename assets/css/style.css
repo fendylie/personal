@@ -552,6 +552,13 @@ button:focus {
   background-size: cover;
 }
 
+#project-4 {
+  background-image: url(../../../assets/img/cashier-web/1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .num-project {
   color: #988e9f;
   font-size: 14px;

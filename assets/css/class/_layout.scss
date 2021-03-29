@@ -486,12 +486,7 @@ button {
 /* Projects */
 .projects {
     position: relative;
-    background-image: linear-gradient(
-        -180deg,
-        #1a1527,
-        #0e0c16 88%,
-        #0e0c16 99%
-    );
+    background-image: linear-gradient(-180deg, #1a1527, #0e0c16 88%, #0e0c16 99%);
     background-color: #0f0d15;
     background-repeat: repeat-x;
     font-weight: bold;
@@ -552,11 +547,7 @@ button {
         top: 0;
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(
-            65deg,
-            rgba(16, 9, 27, 0.8),
-            transparent 50%
-        );
+        background-image: linear-gradient(65deg, rgba(16, 9, 27, 0.8), transparent 50%);
         position: absolute;
     }
 }
@@ -577,6 +568,13 @@ button {
 
 #project-3 {
     background-image: url(../../../assets/img/fm-app/4.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#project-4 {
+    background-image: url(../../../assets/img/cashier-web/1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
